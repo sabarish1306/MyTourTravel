@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mytourtravel">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- add these permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyTourTravel"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".imgresult"></activity>
+        <activity android:name=".imgsrch" />
+        <activity android:name=".userdash" />
+        <activity android:name=".u_main" />
+        <activity
+            android:name=".userpage"
+            android:label="@string/title_activity_userpage"
+            android:theme="@style/Theme.MyTourTravel.NoActionBar" />
+        <activity android:name=".viewplaces" />
+        <activity android:name=".adminh" />
+        <activity
+            android:name=".userhome"
+            android:label="@string/title_activity_userhome"
+            android:theme="@style/Theme.MyTourTravel.NoActionBar" />
+        <activity android:name=".adminhome" />
+        <activity android:name=".signup" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

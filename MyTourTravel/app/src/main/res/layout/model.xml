@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.cardview.widget.CardView   android_orientation="horizontal" android_layout_width="match_parent"
+    android_layout_margin="5dp"
+    card_view_cardCornerRadius="10dp"
+    card_view_cardElevation="5dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <ImageView
+            android:id="@+id/spacecraftImageView"
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_action_user"
+            />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Spacecraft Name"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/spacecraftImageView" />
+
+        <TextView
+            android:id="@+id/propellantTextView"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Propellant"
+            android:textStyle="italic"
+            android:padding="5dp"
+            android:layout_alignBottom="@+id/spacecraftImageView"
+            android:layout_toRightOf="@+id/spacecraftImageView"
+            />
+        <CheckBox
+            android:id="@+id/myCheckBox"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Tech Exists?"
+            android:layout_alignParentRight="true"
+             />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
